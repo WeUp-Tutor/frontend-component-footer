@@ -18,8 +18,9 @@ subscribe(APP_READY, () => {
         <Footer
           onLanguageSelected={() => {}}
           supportedLanguages={[
+            { label: 'Français', value: 'fr' },
             { label: 'English', value: 'en' },
-            { label: 'Español', value: 'es' },
+            { label: 'Español', value: 'es' }
           ]}
         />
       </AppContext.Provider>
