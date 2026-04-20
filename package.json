@@ -2,7 +2,7 @@
   "mfe": {
     "moduleFederation": {
       "exposes": {
-        "my-custom-footer": "./src/my-custom-footer"
+        "./MyCustomFooter": "./src/my-custom-footer"
       }
     }
   },
