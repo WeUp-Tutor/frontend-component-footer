@@ -17,6 +17,55 @@ const EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link',
 };
 
+
+
+const footerCss = `
+  .wrapper-footer {
+    background-color: #1C5659 !important;
+    color: white;
+  }
+
+  body.view-in-course .wrapper-footer {
+    background-color: gray;
+  }
+
+  .wrapper-footer .site-nav,
+  .wrapper-footer footer#footer-openedx .colophon .nav-colophon {
+    margin: 0 !important;
+  }
+
+  .wrapper-footer .site-nav .nav-link,
+  .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a {
+    color: white !important;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navbar-nav > .nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10vw !important;
+    width: calc(100% - 20vw);
+  }
+
+  .navbar-nav > .nav-item > a {
+    color: white !important;
+  }
+
+  @media (min-width: 768px) {
+    .col-md-9 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  }
+`;
+
+
+
 const SiteFooter = ({
   supportedLanguages,
   onLanguageSelected,
@@ -38,33 +87,27 @@ const SiteFooter = ({
   };
 
   return (
-    <footer
-      role="contentinfo"
-      className="footer d-flex border-top py-3 px-4"
-    >
-      <div className="container-fluid d-flex">
-        <a
-          className="d-block"
-          href={config.LMS_BASE_URL}
-          aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
-          onClick={externalLinkClickHandler}
-        >
-          <img
-            style={{ maxHeight: 45 }}
-            src={logo || config.LOGO_TRADEMARK_URL}
-            alt={intl.formatMessage(messages['footer.logo.altText'])}
-          />
-          Je suis dans src/components/Footer.jsx
-        </a>
-        <div className="flex-grow-1" />
-        {showLanguageSelector && (
-          <LanguageSelector
-            options={supportedLanguages}
-            onSubmit={onLanguageSelected}
-          />
-        )}
-      </div>
-    </footer>
+    <>
+      <style>{footerCss}</style>
+
+      <footer className="wrapper-footer">
+        <nav className="site-nav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a href="/tos" className="nav-link" onClick={externalLinkClickHandler}>
+                Mentions légales
+              </a>
+              <a href="/privacy" className="nav-link" onClick={externalLinkClickHandler}>
+                Politique de confidentialité
+              </a>
+              <a href="/honor" className="nav-link" onClick={externalLinkClickHandler}>
+                Crédits
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </>
   );
 };
 
