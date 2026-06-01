@@ -54,6 +54,7 @@ const SiteFooter = ({
             src={logo || config.LOGO_TRADEMARK_URL}
             alt={intl.formatMessage(messages['footer.logo.altText'])}
           />
+          Je suis dans src/components/Footer.jsx
         </a>
         <div className="flex-grow-1" />
         {showLanguageSelector && (
