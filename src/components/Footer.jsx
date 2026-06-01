@@ -23,8 +23,13 @@ const footerCss = `
   .wrapper-footer {
     background-color: #1C5659 !important;
     color: white;
+    padding: 25px 10px 30px 10px !important;
+    font-family: "Barlow";
   }
 
+  body {
+    font-family: "Barlow";
+  }
   body.view-in-course .wrapper-footer {
     background-color: gray;
   }
@@ -94,13 +99,13 @@ const SiteFooter = ({
         <nav className="site-nav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a href="/tos" className="nav-link" onClick={externalLinkClickHandler}>
+              <a href="https://tutor-cyril.weup.in/tos" className="nav-link" onClick={externalLinkClickHandler}>
                 Mentions légales
               </a>
-              <a href="/privacy" className="nav-link" onClick={externalLinkClickHandler}>
+              <a href="https://tutor-cyril.weup.in/privacy" className="nav-link" onClick={externalLinkClickHandler}>
                 Politique de confidentialité
               </a>
-              <a href="/honor" className="nav-link" onClick={externalLinkClickHandler}>
+              <a href="https://tutor-cyril.weup.in/honor" className="nav-link" onClick={externalLinkClickHandler}>
                 Crédits
               </a>
             </li>
