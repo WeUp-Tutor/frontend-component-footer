@@ -43,7 +43,7 @@ var SiteFooter = function SiteFooter(_ref) {
     },
     src: logo || config.LOGO_TRADEMARK_URL,
     alt: intl.formatMessage(messages['footer.logo.altText'])
-  })), /*#__PURE__*/React.createElement("div", {
+  }), "Je suis dans src/components/Footer.jsx"), /*#__PURE__*/React.createElement("div", {
     className: "flex-grow-1"
   }), showLanguageSelector && /*#__PURE__*/React.createElement(LanguageSelector, {
     options: supportedLanguages,
