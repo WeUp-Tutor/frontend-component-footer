@@ -38,32 +38,197 @@ const SiteFooter = ({
   };
 
   return (
-    <footer
-      role="contentinfo"
-      className="footer d-flex border-top py-3 px-4"
-    >
-      <div className="container-fluid d-flex">
-        <a
-          className="d-block"
-          href={config.LMS_BASE_URL}
-          aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
-          onClick={externalLinkClickHandler}
-        >
-          <img
-            style={{ maxHeight: 45 }}
-            src={logo || config.LOGO_TRADEMARK_URL}
-            alt={intl.formatMessage(messages['footer.logo.altText'])}
-          />
-        </a>
-        <div className="flex-grow-1" />
-        {showLanguageSelector && (
-          <LanguageSelector
-            options={supportedLanguages}
-            onSubmit={onLanguageSelected}
-          />
-        )}
-      </div>
-    </footer>
+    <div className="wrapper wrapper-footer">
+      <footer id="footer" className="tutor-container">
+        <div className="footer__inner">
+          <div className="footer__logos">
+            <img
+              src="https://hexafret.weup.in/static/indigo/images/logo-white.png"
+              alt="Hexafret"
+              className="footer__logo footer__logo--hexafret"
+            />
+
+            <img
+              src="https://hexafret.weup.in/static/indigo/images/logo-rl_eu.png"
+              alt="Rail Logistics Europe"
+              className="footer__logo footer__logo--rle"
+            />
+          </div>
+
+          <div className="footer__separator" />
+
+          <nav className="footer__nav" aria-label="Liens légaux">
+            <a
+              style={{ color: "#ffffff" }}
+              href="/tos"
+              className="footer__link"
+            >
+              Mentions légales
+            </a>
+
+            <a
+              style={{ color: "#ffffff" }}
+              href="/privacy"
+              className="footer__link"
+            >
+              Politique de données personnelles
+            </a>
+          </nav>
+        </div>
+
+        <style>{`
+          #footer,
+          .wrapper-footer {
+            background-color: #283940 !important;
+            color: #ffffff !important;
+            padding: 40px 24px 36px;
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          }
+
+          #footer * {
+            color: #ffffff !important;
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+          }
+
+          .footer__inner {
+            max-width: 1130px;
+            margin: 0 auto;
+          }
+
+          .footer__logos {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 32px;
+            margin-bottom: 38px;
+          }
+
+          .footer__logo {
+            display: block;
+            height: auto;
+            object-fit: contain;
+          }
+
+          .footer__logo--hexafret {
+            width: 170px;
+          }
+
+          .footer__logo--rle {
+            width: 110px;
+          }
+
+          .footer__separator {
+            width: 100%;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.9) !important;
+            margin-bottom: 22px;
+          }
+
+          .footer__nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 120px;
+          }
+
+          .footer__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 1.4;
+            font-weight: 400;
+          }
+
+          .powered-area *,
+          .copyright-site {
+            color: #ffffff !important;
+          }
+
+          .footer__link:hover,
+          .footer__link:focus {
+            text-decoration: underline;
+          }
+
+          @media (max-width: 768px) {
+            .footer {
+              padding: 32px 20px;
+            }
+
+            .footer__logos {
+              justify-content: center;
+              gap: 24px;
+              margin-bottom: 30px;
+            }
+
+            .footer__logo--hexafret {
+              width: 145px;
+            }
+
+            .footer__logo--rle {
+              width: 95px;
+            }
+
+            .footer__nav {
+              flex-direction: column;
+              gap: 14px;
+            }
+
+            .footer__link {
+              font-size: 16px;
+              text-align: center;
+            }
+          }
+        `}</style>
+
+        <div className="footer-top">
+          <div className="powered-area">
+            <ul className="logo-list">
+              <li>Powered by:</li>
+
+              <li>
+                <a
+                  href="https://edly.io/tutor/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    src="/static/indigo/images/tutor-logo.18a510d9048c.png"
+                    alt="Runs on Tutor"
+                    width="80"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://open.edx.org"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    src="/static/indigo/images/openedx-logo.684efe50b0f6.png"
+                    alt="Propulsé par Open edX"
+                    width="79"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <span className="copyright-site">
+          Copyrights ©2026. All Rights Reserved.
+        </span>
+
+        <div className="colophon">
+          <p className="copyright">
+            © Hexafret. Tous droits réservés sauf indication contraire. edX,
+            Open edX et leurs logos respectifs sont des marques déposées
+            d&#39;edX Inc.
+          </p>
+        </div>
+      </footer>
+    </div>
   );
 };
 
