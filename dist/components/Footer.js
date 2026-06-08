@@ -72,7 +72,7 @@ var SiteFooter = function SiteFooter(_ref) {
     rel: "noopener noreferrer",
     target: "_blank"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "/static/indigo/images/tutor-logo.18a510d9048c.png",
+    src: "https://hexafret.weup.in/static/indigo/images/tutor-logo.png",
     alt: "Runs on Tutor",
     width: "80"
   }))), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
@@ -80,16 +80,12 @@ var SiteFooter = function SiteFooter(_ref) {
     rel: "noopener noreferrer",
     target: "_blank"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "/static/indigo/images/openedx-logo.684efe50b0f6.png",
+    src: "https://hexafret.weup.in/static/indigo/images/openedx-logo.png",
     alt: "Propuls\xE9 par Open edX",
     width: "79"
   })))))), /*#__PURE__*/React.createElement("span", {
     className: "copyright-site"
-  }, "Copyrights \xA92026. All Rights Reserved."), /*#__PURE__*/React.createElement("div", {
-    className: "colophon"
-  }, /*#__PURE__*/React.createElement("p", {
-    className: "copyright"
-  }, "\xA9 Hexafret. Tous droits r\xE9serv\xE9s sauf indication contraire. edX, Open edX et leurs logos respectifs sont des marques d\xE9pos\xE9es d'edX Inc."))));
+  }, "Copyrights \xA92026. All Rights Reserved.")));
 };
 SiteFooter.propTypes = {
   logo: PropTypes.string,
