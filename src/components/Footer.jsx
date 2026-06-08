@@ -192,7 +192,7 @@ const SiteFooter = ({
                   target="_blank"
                 >
                   <img
-                    src="/static/indigo/images/tutor-logo.18a510d9048c.png"
+                    src="https://hexafret.weup.in/static/indigo/images/tutor-logo.png"
                     alt="Runs on Tutor"
                     width="80"
                   />
@@ -206,7 +206,7 @@ const SiteFooter = ({
                   target="_blank"
                 >
                   <img
-                    src="/static/indigo/images/openedx-logo.684efe50b0f6.png"
+                    src="https://hexafret.weup.in/static/indigo/images/openedx-logo.png"
                     alt="Propulsé par Open edX"
                     width="79"
                   />
@@ -220,13 +220,7 @@ const SiteFooter = ({
           Copyrights ©2026. All Rights Reserved.
         </span>
 
-        <div className="colophon">
-          <p className="copyright">
-            © Hexafret. Tous droits réservés sauf indication contraire. edX,
-            Open edX et leurs logos respectifs sont des marques déposées
-            d&#39;edX Inc.
-          </p>
-        </div>
+
       </footer>
     </div>
   );
