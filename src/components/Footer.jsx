@@ -181,39 +181,7 @@ const SiteFooter = ({
         `}</style>
 
         <div className="footer-top">
-          <div className="powered-area">
-            <ul className="logo-list">
-              <li>Powered by:</li>
 
-              <li>
-                <a
-                  href="https://edly.io/tutor/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img
-                    src="https://hexafret.weup.in/static/indigo/images/tutor-logo.png"
-                    alt="Runs on Tutor"
-                    width="80"
-                  />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://open.edx.org"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img
-                    src="https://hexafret.weup.in/static/indigo/images/openedx-logo.png"
-                    alt="Propulsé par Open edX"
-                    width="79"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <span className="copyright-site">
