@@ -7,7 +7,7 @@ import { AppContext } from '@edx/frontend-platform/react';
 
 import messages from './Footer.messages';
 import LanguageSelector from './LanguageSelector';
-
+import './footer.css'
 ensureConfig([
   'LMS_BASE_URL',
   'LOGO_TRADEMARK_URL',
@@ -40,6 +40,51 @@ const SiteFooter = ({
   return (
     <div className="wrapper wrapper-footer">
       <footer id="footer" className="tutor-container">
+        <div className="footer__inner">
+          <div className="footer__logos">
+            <img
+              src="https://hexafret.weup.in/static/indigo/images/logo-white.png"
+              alt="Hexafret"
+              className="footer__logo footer__logo--hexafret"
+            />
+
+            <img
+              src="https://hexafret.weup.in/static/indigo/images/logo-rl_eu.png"
+              alt="Rail Logistics Europe"
+              className="footer__logo footer__logo--rle"
+            />
+          </div>
+
+          <div className="footer__separator" />
+
+          <nav className="footer__nav" aria-label="Liens légaux">
+            <a
+              style={{ color: "#ffffff" }}
+              href="/tos"
+              className="footer__link"
+            >
+              Mentions légales
+            </a>
+
+            <a
+              style={{ color: "#ffffff" }}
+              href="/privacy"
+              className="footer__link"
+            >
+              Politique de données personnelles
+            </a>
+          </nav>
+        </div>
+
+
+
+        <div className="footer-top">
+
+        </div>
+
+        <span className="copyright-site">
+          Copyrights ©2026. All Rights Reserved.
+        </span>
 
 
       </footer>
