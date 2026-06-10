@@ -38,7 +38,6 @@ const SiteFooter = ({
   };
 
   const footerCss = `
-#footer,
           .wrapper-footer {
             background-color: #283940 !important;
             color: #ffffff !important;
