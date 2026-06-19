@@ -37,6 +37,7 @@ const footerCss = `
   }
   .wrapper-footer .site-nav .nav-link, .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a {
     color: white !important;
+    font-size: medium !important;
   }
   .navbar-nav {
     width: 100%;
