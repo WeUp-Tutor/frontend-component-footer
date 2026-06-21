@@ -36,11 +36,11 @@ var SiteFooter = function SiteFooter(_ref) {
   }, /*#__PURE__*/React.createElement("div", {
     className: "footer__logos"
   }, /*#__PURE__*/React.createElement("img", {
-    src: "https://hexafret.weup.in/static/indigo/images/logo-white.png",
+    src: "https://decouverte-metiers.sncf.hexafret.net/static/indigo/images/logo-white.png",
     alt: "Hexafret",
     className: "footer__logo footer__logo--hexafret"
   }), /*#__PURE__*/React.createElement("img", {
-    src: "https://hexafret.weup.in/static/indigo/images/logo-rl_eu.png",
+    src: "https://decouverte-metiers.sncf.hexafret.net/static/indigo/images/logo-rl_eu.png",
     alt: "Rail Logistics Europe",
     className: "footer__logo footer__logo--rle"
   })), /*#__PURE__*/React.createElement("div", {
@@ -52,15 +52,9 @@ var SiteFooter = function SiteFooter(_ref) {
     style: {
       color: "#ffffff"
     },
-    href: "https://hexafret.weup.in/tos",
+    href: "https://decouverte-metiers.sncf.hexafret.net/tos",
     className: "footer__link"
-  }, "Mentions l\xE9gales"), /*#__PURE__*/React.createElement("a", {
-    style: {
-      color: "#ffffff"
-    },
-    href: "https://hexafret.weup.in/privacy",
-    className: "footer__link"
-  }, "Politique de donn\xE9es personnelles"))), /*#__PURE__*/React.createElement("div", {
+  }, "Mentions l\xE9gales"))), /*#__PURE__*/React.createElement("div", {
     className: "footer-top"
   }), /*#__PURE__*/React.createElement("span", {
     className: "copyright-site"
