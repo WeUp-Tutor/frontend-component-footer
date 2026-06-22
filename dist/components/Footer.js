@@ -10,6 +10,7 @@ ensureConfig(['LMS_BASE_URL', 'LOGO_TRADEMARK_URL'], 'Footer component');
 var EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link'
 };
+var footerCss = "\n  .wrapper-footer {\n    background-color: #1C5659 !important;\n    color: white;\n    padding: 25px 10px 30px 10px !important;\n    font-family: \"Barlow\";\n  }\n  body {\n    font-family: \"Barlow\";\n  }\n  body.view-in-course .wrapper-footer {\n    background-color: gray;\n  }\n  .wrapper-footer .site-nav, .wrapper-footer footer#footer-openedx .colophon .nav-colophon {\n    margin: 0 !important;\n  }\n  .wrapper-footer .site-nav .nav-link, .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a {\n    color: white !important;\n    font-size: medium !important;\n  }\n  .navbar-nav {\n    width: 100%;\n  }\n  .navbar-nav > .nav-item {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    margin: 0 10vw !important;\n    width: calc(100% - 20vw);\n  }\n  .navbar-nav > .nav-item > a {\n    color: white !important;\n  }\n  .theme-toggle-button {\n    display: none;\n  }\n";
 var SiteFooter = function SiteFooter(_ref) {
   var supportedLanguages = _ref.supportedLanguages,
     onLanguageSelected = _ref.onLanguageSelected,
@@ -27,28 +28,27 @@ var SiteFooter = function SiteFooter(_ref) {
     };
     sendTrackEvent(eventName, properties);
   };
-  return /*#__PURE__*/React.createElement("footer", {
-    role: "contentinfo",
-    className: "footer d-flex border-top py-3 px-4"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "container-fluid d-flex"
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("style", null, footerCss), /*#__PURE__*/React.createElement("footer", {
+    className: "wrapper-footer"
+  }, /*#__PURE__*/React.createElement("nav", {
+    className: "site-nav"
+  }, /*#__PURE__*/React.createElement("ul", {
+    className: "navbar-nav"
+  }, /*#__PURE__*/React.createElement("li", {
+    className: "nav-item"
   }, /*#__PURE__*/React.createElement("a", {
-    className: "d-block",
-    href: config.LMS_BASE_URL,
-    "aria-label": intl.formatMessage(messages['footer.logo.ariaLabel']),
+    href: "https://tutor-cyril.weup.in/tos",
+    className: "nav-link",
     onClick: externalLinkClickHandler
-  }, /*#__PURE__*/React.createElement("img", {
-    style: {
-      maxHeight: 45
-    },
-    src: logo || config.LOGO_TRADEMARK_URL,
-    alt: intl.formatMessage(messages['footer.logo.altText'])
-  }), "Je suis dans src/components/Footer.jsx"), /*#__PURE__*/React.createElement("div", {
-    className: "flex-grow-1"
-  }), showLanguageSelector && /*#__PURE__*/React.createElement(LanguageSelector, {
-    options: supportedLanguages,
-    onSubmit: onLanguageSelected
-  })));
+  }, "Mentions l\xE9gales"), /*#__PURE__*/React.createElement("a", {
+    href: "https://tutor-cyril.weup.in/privacy",
+    className: "nav-link",
+    onClick: externalLinkClickHandler
+  }, "Politique de confidentialit\xE9"), /*#__PURE__*/React.createElement("a", {
+    href: "https://tutor-cyril.weup.in/honor",
+    className: "nav-link",
+    onClick: externalLinkClickHandler
+  }, "Cr\xE9dits"))))));
 };
 SiteFooter.propTypes = {
   logo: PropTypes.string,
