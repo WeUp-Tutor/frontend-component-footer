@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { sendTrackEvent } from '@edx/frontend-platform/analytics';
@@ -18,6 +18,32 @@ var SiteFooter = function SiteFooter(_ref) {
   var intl = useIntl();
   var _useContext = useContext(AppContext),
     config = _useContext.config;
+  useEffect(function () {
+    if (window.tarteaucitron) {
+      return;
+    }
+    var script = document.createElement('script');
+    // Si le footer est rendu dans un MFE servi sur apps.*, URL relative OK :
+    script.src = '/custom-theme-js/tarteaucitron.js';
+    script.type = 'text/javascript';
+    script.charset = 'utf-8';
+    script.onload = function () {
+      if (!window.tarteaucitron) return;
+      window.tarteaucitron.init({
+        privacyUrl: 'https://tutor-cyril.weup.in/tos',
+        orientation: 'bottom',
+        groupServices: true,
+        showAlertSmall: false,
+        cookieslist: true,
+        mandatory: true,
+        highPrivacy: true,
+        useExternalCss: false,
+        useExternalJs: false
+      });
+      (window.tarteaucitron.job = window.tarteaucitron.job || []).push('youtube');
+    };
+    document.head.appendChild(script);
+  }, []);
   var showLanguageSelector = supportedLanguages.length > 0 && onLanguageSelected;
   var externalLinkClickHandler = function externalLinkClickHandler(event) {
     var label = event.currentTarget.getAttribute('href');

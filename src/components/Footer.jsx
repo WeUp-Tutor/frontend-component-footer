@@ -87,7 +87,7 @@ const SiteFooter = ({
       if (!window.tarteaucitron) return;
 
       window.tarteaucitron.init({
-        privacyUrl: '/tos', // ou URL absolue sur ton LMS
+        privacyUrl: 'https://tutor-cyril.weup.in/tos',
         orientation: 'bottom',
         groupServices: true,
         showAlertSmall: false,
