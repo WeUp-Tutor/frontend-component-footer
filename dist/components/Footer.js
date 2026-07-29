@@ -19,6 +19,18 @@ var SiteFooter = function SiteFooter(_ref) {
   var _useContext = useContext(AppContext),
     config = _useContext.config;
   useEffect(function () {
+    // Ne pas afficher le bandeau si ce composant est rendu à l'intérieur d'une iframe
+    // (cas des pages de cours, où le footer est aussi rendu dans l'iframe "unit")
+    var isTopWindow;
+    try {
+      isTopWindow = window.top === window.self;
+    } catch (e) {
+      // Accès bloqué (iframe cross-origin) => on considère qu'on N'EST PAS dans la fenêtre top
+      isTopWindow = false;
+    }
+    if (!isTopWindow) {
+      return;
+    }
     if (window.tarteaucitron) {
       return;
     }
