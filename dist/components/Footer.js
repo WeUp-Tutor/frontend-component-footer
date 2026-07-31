@@ -35,15 +35,37 @@ var SiteFooter = function SiteFooter(_ref) {
     className: "footer__inner"
   }, /*#__PURE__*/React.createElement("div", {
     className: "footer__logos"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }
   }, /*#__PURE__*/React.createElement("img", {
     src: "https://decouverte-metiers.sncf.hexafret.net/static/indigo/images/logo-white.png",
     alt: "Hexafret",
     className: "footer__logo footer__logo--hexafret"
-  }), /*#__PURE__*/React.createElement("img", {
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: '12px',
+      display: 'flex',
+      flexWrap: 'nowrap',
+      flexDirection: 'row',
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("p", null, "Une marque de :"), /*#__PURE__*/React.createElement("img", {
     src: "https://decouverte-metiers.sncf.hexafret.net/static/indigo/images/logo-rl_eu.png",
     alt: "Rail Logistics Europe",
     className: "footer__logo footer__logo--rle"
-  })), /*#__PURE__*/React.createElement("div", {
+  })), /*#__PURE__*/React.createElement("p", {
+    style: {
+      textAlign: 'justify',
+      fontSize: '12px',
+      maxWidth: '75%'
+    }
+  }, " Rail Logistics Europe est une soci\xE9t\xE9 du groupe SNCF "))), /*#__PURE__*/React.createElement("div", {
     className: "footer__separator"
   }), /*#__PURE__*/React.createElement("nav", {
     className: "footer__nav",
