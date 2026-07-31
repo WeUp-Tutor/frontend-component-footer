@@ -95,7 +95,7 @@ const SiteFooter = ({
 
     const script = document.createElement('script');
     // Si le footer est rendu dans un MFE servi sur apps.*, URL relative OK :
-    script.src = '/custom-theme-js/tarteaucitron.js';
+    script.src = '/custom-theme-media/js/tarteaucitron.js';
     script.type = 'text/javascript';
     script.charset = 'utf-8';
     script.onload = () => {
