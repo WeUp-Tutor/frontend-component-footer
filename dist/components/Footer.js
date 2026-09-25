@@ -42,7 +42,7 @@ var SiteFooter = function SiteFooter(_ref) {
     script.onload = function () {
       if (!window.tarteaucitron) return;
       window.tarteaucitron.init({
-        privacyUrl: 'https://tutor-cyril.weup.in/tos',
+        privacyUrl: 'https://tutor-dev.weup.in/tos',
         orientation: 'bottom',
         groupServices: true,
         showAlertSmall: false,
@@ -75,15 +75,15 @@ var SiteFooter = function SiteFooter(_ref) {
   }, /*#__PURE__*/React.createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/React.createElement("a", {
-    href: "https://tutor-cyril.weup.in/tos",
+    href: "https://tutor-dev.weup.in/tos",
     className: "nav-link",
     onClick: externalLinkClickHandler
   }, "Mentions l\xE9gales"), /*#__PURE__*/React.createElement("a", {
-    href: "https://tutor-cyril.weup.in/privacy",
+    href: "https://tutor-dev.weup.in/privacy",
     className: "nav-link",
     onClick: externalLinkClickHandler
   }, "Politique de confidentialit\xE9"), /*#__PURE__*/React.createElement("a", {
-    href: "https://tutor-cyril.weup.in/honor",
+    href: "https://tutor-dev.weup.in/honor",
     className: "nav-link",
     onClick: externalLinkClickHandler
   }, "Cr\xE9dits"))))));

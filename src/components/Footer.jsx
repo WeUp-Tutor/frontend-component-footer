@@ -102,7 +102,7 @@ const SiteFooter = ({
       if (!window.tarteaucitron) return;
 
       window.tarteaucitron.init({
-        privacyUrl: 'https://tutor-cyril.weup.in/tos',
+        privacyUrl: 'https://tutor-dev.weup.in/tos',
         orientation: 'bottom',
         groupServices: true,
         showAlertSmall: false,
@@ -143,13 +143,13 @@ const SiteFooter = ({
         <nav className="site-nav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a href="https://tutor-cyril.weup.in/tos" className="nav-link" onClick={externalLinkClickHandler}>
+              <a href="https://tutor-dev.weup.in/tos" className="nav-link" onClick={externalLinkClickHandler}>
                 Mentions légales
               </a>
-              <a href="https://tutor-cyril.weup.in/privacy" className="nav-link" onClick={externalLinkClickHandler}>
+              <a href="https://tutor-dev.weup.in/privacy" className="nav-link" onClick={externalLinkClickHandler}>
                 Politique de confidentialité
               </a>
-              <a href="https://tutor-cyril.weup.in/honor" className="nav-link" onClick={externalLinkClickHandler}>
+              <a href="https://tutor-dev.weup.in/honor" className="nav-link" onClick={externalLinkClickHandler}>
                 Crédits
               </a>
             </li>
