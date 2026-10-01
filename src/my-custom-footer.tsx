@@ -18,9 +18,9 @@ const CustomFooter: React.FC = () => (
         </div>
         <nav className="nav-colophon">
             <ol>
-                <li><a href="https://tutor-cyril.weup.in/tos">CGU</a></li>
-                <li><a href="https://tutor-cyril.weup.in/privacy">Politique de confidentialité</a></li>
-                <li><a href="https://tutor-cyril.weup.in/contact">Contact</a></li>
+                <li><a href="https://conduitesncfmooc.sncf.fr/tos">CGU</a></li>
+                <li><a href="https://conduitesncfmooc.sncf.fr/privacy">Politique de confidentialité</a></li>
+                <li><a href="https://conduitesncfmooc.sncf.fr/contact">Contact</a></li>
             </ol>
         </nav>
     </div>

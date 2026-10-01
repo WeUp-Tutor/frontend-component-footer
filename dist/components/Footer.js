@@ -10,7 +10,7 @@ ensureConfig(['LMS_BASE_URL', 'LOGO_TRADEMARK_URL'], 'Footer component');
 var EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link'
 };
-var footerCss = "\n  .wrapper-footer {\n    background-color: #1C5659 !important;\n    color: white;\n    padding: 25px 10px 30px 10px !important;\n    font-family: \"Barlow\";\n  }\n  body {\n    font-family: \"Barlow\";\n  }\n  body.view-in-course .wrapper-footer {\n    background-color: gray;\n  }\n  .wrapper-footer .site-nav, .wrapper-footer footer#footer-openedx .colophon .nav-colophon {\n    margin: 0 !important;\n  }\n  .wrapper-footer .site-nav .nav-link, .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a {\n    color: white !important;\n    font-size: medium !important;\n  }\n  .navbar-nav {\n    width: 100%;\n  }\n  .navbar-nav > .nav-item {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    margin: 0 10vw !important;\n    width: calc(100% - 20vw);\n  }\n  .navbar-nav > .nav-item > a {\n    color: white !important;\n  }\n  .theme-toggle-button {\n    display: none;\n  }\n";
+var footerCss = "\n  .wrapper-footer {\n    background-color: #3C3C3B !important;\n    color: white;\n    padding: 25px 10px 30px 10px !important;\n    font-family: \"Barlow\";\n  }\n  body {\n    font-family: \"Barlow\";\n  }\n  body.view-in-course .wrapper-footer {\n    background-color: gray;\n  }\n  .wrapper-footer .site-nav, .wrapper-footer footer#footer-openedx .colophon .nav-colophon {\n    margin: 0 !important;\n  }\n  .wrapper-footer .site-nav .nav-link, .wrapper-footer footer#footer-openedx .colophon .nav-colophon li a {\n    color: white !important;\n    font-size: medium !important;\n  }\n  .navbar-nav {\n    width: 100%;\n  }\n  .navbar-nav > .nav-item {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    margin: 0 10vw !important;\n    width: calc(100% - 20vw);\n  }\n  .navbar-nav > .nav-item > a {\n    color: white !important;\n  }\n  .theme-toggle-button {\n    display: none;\n  }\n";
 var SiteFooter = function SiteFooter(_ref) {
   var supportedLanguages = _ref.supportedLanguages,
     onLanguageSelected = _ref.onLanguageSelected,
@@ -36,13 +36,13 @@ var SiteFooter = function SiteFooter(_ref) {
     }
     var script = document.createElement('script');
     // Si le footer est rendu dans un MFE servi sur apps.*, URL relative OK :
-    script.src = '/custom-theme-js/tarteaucitron.js';
+    script.src = '/custom-theme-media/js/tarteaucitron.js';
     script.type = 'text/javascript';
     script.charset = 'utf-8';
     script.onload = function () {
       if (!window.tarteaucitron) return;
       window.tarteaucitron.init({
-        privacyUrl: 'https://tutor-cyril.weup.in/tos',
+        privacyUrl: 'https://conduitesncfmooc.sncf.fr/tos',
         orientation: 'bottom',
         groupServices: true,
         showAlertSmall: false,
@@ -75,15 +75,15 @@ var SiteFooter = function SiteFooter(_ref) {
   }, /*#__PURE__*/React.createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/React.createElement("a", {
-    href: "https://tutor-cyril.weup.in/tos",
+    href: "https://conduitesncfmooc.sncf.fr/tos",
     className: "nav-link",
     onClick: externalLinkClickHandler
   }, "Mentions l\xE9gales"), /*#__PURE__*/React.createElement("a", {
-    href: "https://tutor-cyril.weup.in/privacy",
+    href: "https://conduitesncfmooc.sncf.fr/privacy",
     className: "nav-link",
     onClick: externalLinkClickHandler
   }, "Politique de confidentialit\xE9"), /*#__PURE__*/React.createElement("a", {
-    href: "https://tutor-cyril.weup.in/honor",
+    href: "https://conduitesncfmooc.sncf.fr/honor",
     className: "nav-link",
     onClick: externalLinkClickHandler
   }, "Cr\xE9dits"))))));

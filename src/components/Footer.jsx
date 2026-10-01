@@ -21,7 +21,7 @@ const EVENT_NAMES = {
 
 const footerCss = `
   .wrapper-footer {
-    background-color: #1C5659 !important;
+    background-color: #3C3C3B !important;
     color: white;
     padding: 25px 10px 30px 10px !important;
     font-family: "Barlow";
@@ -102,7 +102,7 @@ const SiteFooter = ({
       if (!window.tarteaucitron) return;
 
       window.tarteaucitron.init({
-        privacyUrl: 'https://tutor-cyril.weup.in/tos',
+        privacyUrl: 'https://conduitesncfmooc.sncf.fr/tos',
         orientation: 'bottom',
         groupServices: true,
         showAlertSmall: false,
@@ -143,13 +143,13 @@ const SiteFooter = ({
         <nav className="site-nav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a href="https://tutor-cyril.weup.in/tos" className="nav-link" onClick={externalLinkClickHandler}>
+              <a href="https://conduitesncfmooc.sncf.fr/tos" className="nav-link" onClick={externalLinkClickHandler}>
                 Mentions légales
               </a>
-              <a href="https://tutor-cyril.weup.in/privacy" className="nav-link" onClick={externalLinkClickHandler}>
+              <a href="https://conduitesncfmooc.sncf.fr/privacy" className="nav-link" onClick={externalLinkClickHandler}>
                 Politique de confidentialité
               </a>
-              <a href="https://tutor-cyril.weup.in/honor" className="nav-link" onClick={externalLinkClickHandler}>
+              <a href="https://conduitesncfmooc.sncf.fr/honor" className="nav-link" onClick={externalLinkClickHandler}>
                 Crédits
               </a>
             </li>
