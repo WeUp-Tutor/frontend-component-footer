@@ -21,13 +21,13 @@ const EVENT_NAMES = {
 
 const footerCss = `
   .wrapper-footer {
-    background-color: #1C5659 !important;
+    background-color: #0F2D4D !important;
     color: white;
     padding: 25px 10px 30px 10px !important;
-    font-family: "Barlow";
+    font-family: "Roboto", "Barlow";
   }
   body {
-    font-family: "Barlow";
+    font-family: "Roboto", "Barlow";
   }
   body.view-in-course .wrapper-footer {
     background-color: gray;
@@ -144,14 +144,16 @@ const SiteFooter = ({
           <ul className="navbar-nav">
             <li className="nav-item">
               <a href="https://tutor-dev.weup.in/tos" className="nav-link" onClick={externalLinkClickHandler}>
-                Mentions légales
+                Conditions générales d'utilisation
               </a>
+{/*
               <a href="https://tutor-dev.weup.in/privacy" className="nav-link" onClick={externalLinkClickHandler}>
                 Politique de confidentialité
               </a>
               <a href="https://tutor-dev.weup.in/honor" className="nav-link" onClick={externalLinkClickHandler}>
                 Crédits
               </a>
+*/}
             </li>
           </ul>
         </nav>
